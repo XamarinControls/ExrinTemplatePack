@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<local:BaseView xmlns="http://xamarin.com/schemas/2014/forms"
+                xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:local="clr-namespace:$safeprojectname$.Base"
+                x:Class="$safeprojectname$.LoginView">
+  <Grid Padding="20">
+    <StackLayout>
+      <Button Text="Login" Command="{Binding LoginCommand}" />
+    </StackLayout>
+  </Grid>
+</local:BaseView>

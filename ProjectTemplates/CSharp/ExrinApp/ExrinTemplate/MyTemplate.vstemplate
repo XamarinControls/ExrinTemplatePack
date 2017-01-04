@@ -1,0 +1,40 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>ExrinTemplate</Name>
+    <Description>Exrin Core Mobile Project</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>ExrinTemplate</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="ExrinTemplate.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyRegister.cs">AssemblyRegister.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Bootstrapper.cs">Bootstrapper.cs</ProjectItem>
+      <Folder Name="Container" TargetFolderName="Container">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AuthenticationContainer.cs">AuthenticationContainer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainContainer.cs">MainContainer.cs</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Proxy" TargetFolderName="Proxy">
+        <ProjectItem ReplaceParameters="true" TargetFileName="InjectionProxy.cs">InjectionProxy.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="NavigationProxy.cs">NavigationProxy.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Stack" TargetFolderName="Stack">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AuthenticationStack.cs">AuthenticationStack.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainStack.cs">MainStack.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

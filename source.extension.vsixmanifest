@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Id="Exrin.Template.Company.54fd4215-c63d-4685-bb8e-d80e211198c5" Version="0.1.38" Language="en-US" Publisher="Adam Pedley" />
+    <DisplayName>Exrin Template</DisplayName>
+    <Description xml:space="preserve">Xamarin Forms mobile solution using Exrin.</Description>
+    <MoreInfo>https://exrin.net</MoreInfo>
+    <License>license.txt</License>
+    <Icon>exrin_128.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+  </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:TargetPath="|ExrinApp;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" d:ProjectName="ExrinApp" />
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="Project" d:ProjectName="Exrin.VisualStudio.Wizard" Path="|Exrin.VisualStudio.Wizard|" AssemblyName="|Exrin.VisualStudio.Wizard;AssemblyName|" />
+  </Assets>
+</PackageManifest>

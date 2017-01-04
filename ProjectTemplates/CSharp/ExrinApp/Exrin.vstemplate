@@ -1,0 +1,48 @@
+﻿<VSTemplate Version="2.0.0" Type="ProjectGroup"
+    xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
+  <TemplateData>
+    <Name>Exrin</Name>
+    <Description>Xamarin Forms mobile solution using Exrin</Description>
+    <Icon>Icon.ico</Icon>
+    <ProjectType>CSharp</ProjectType>
+    <DefaultName>ExrinMobileApp</DefaultName>
+  </TemplateData>
+  <TemplateContent>
+    <ProjectCollection>
+      <SolutionFolder Name="App">
+        <ProjectTemplateLink ProjectName="$safeprojectname$">
+          ExrinTemplate\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Framework">
+          ExrinTemplate.Framework\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Logic">
+          ExrinTemplate.Logic\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.View">
+          ExrinTemplate.View\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+      <SolutionFolder Name="Platform">
+        <ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
+          ExrinTemplate.Droid\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.iOS">
+          ExrinTemplate.iOS\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+        <ProjectTemplateLink ProjectName="$safeprojectname$.UWP">
+          ExrinTemplate.UWP\MyTemplate.vstemplate
+        </ProjectTemplateLink>
+      </SolutionFolder>
+    </ProjectCollection>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Xamarin.Forms.Templates.VisualStudio</Assembly>
+    <FullClassName>Xamarin.Forms.Templates.Wizards.SolutionGuids</FullClassName>
+  </WizardExtension>
+  <WizardExtension>
+    <Assembly>Exrin.VisualStudio.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c386332babdcac90</Assembly>
+    <FullClassName>Exrin.VisualStudio.Wizard.ExrinProjectWizard</FullClassName>
+  </WizardExtension>
+ 
+</VSTemplate>
