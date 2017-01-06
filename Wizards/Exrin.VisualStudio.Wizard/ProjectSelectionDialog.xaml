@@ -9,9 +9,9 @@
         WindowStyle="None">
     <StackPanel HorizontalAlignment="Left" Height="107" Margin="10,10,0,0" VerticalAlignment="Top" Width="580">
         <Label  Content="Choose which platforms your Exrin mobile app will support."/>
-        <CheckBox x:Name="AndroidCheckBox" Content="Android"/>
-        <CheckBox x:Name="IOSCheckBox" Content="iOS"/>
-        <CheckBox x:Name="UWPCheckBox" Content="UWP"/>
+        <CheckBox x:Name="AndroidCheckBox" Content="Android" IsChecked="True" />
+        <CheckBox x:Name="IOSCheckBox" Content="iOS" IsChecked="True" />
+        <CheckBox x:Name="UWPCheckBox" Content="UWP" IsChecked="True" />
         <Button x:Name="CreateButton" Content="Create Project" Click="CreateButton_Click"/>
     </StackPanel>
 </Window>

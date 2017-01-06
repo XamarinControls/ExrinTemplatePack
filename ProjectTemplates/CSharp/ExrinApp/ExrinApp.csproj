@@ -110,11 +110,13 @@
     <Content Include="Icon.ico" />
     <VSTemplate Include="Exrin.vstemplate">
       <SubType>Designer</SubType>
+      <OutputSubPath>Exrin</OutputSubPath>
     </VSTemplate>
     <None Include="ExrinTemplate.Droid\ExrinTemplate.Droid.csproj" />
-    <None Include="ExrinTemplate.Droid\MyTemplate.vstemplate">
+    <VSTemplate Include="ExrinTemplate.Droid\ExrinTemplate.Droid.vstemplate">
       <SubType>Designer</SubType>
-    </None>
+      <OutputSubPath>Exrin</OutputSubPath>
+    </VSTemplate>
     <None Include="ExrinTemplate.Droid\Properties\AndroidManifest.xml" />
     <None Include="ExrinTemplate.Droid\Resources\drawable-hdpi\icon.png" />
     <None Include="ExrinTemplate.Droid\Resources\drawable-xhdpi\icon.png" />
@@ -130,9 +132,10 @@
     <None Include="ExrinTemplate.iOS\Entitlements.plist" />
     <None Include="ExrinTemplate.iOS\ExrinTemplate.iOS.csproj" />
     <None Include="ExrinTemplate.iOS\Info.plist" />
-    <None Include="ExrinTemplate.iOS\MyTemplate.vstemplate">
+    <VSTemplate Include="ExrinTemplate.iOS\ExrinTemplate.iOS.vstemplate">
       <SubType>Designer</SubType>
-    </None>
+      <OutputSubPath>Exrin</OutputSubPath>
+    </VSTemplate>
     <None Include="ExrinTemplate.iOS\Resources\Default%402x.png" />
     <None Include="ExrinTemplate.iOS\Resources\Default-568h%402x.png" />
     <None Include="ExrinTemplate.iOS\Resources\Default-Portrait%402x.png" />
@@ -162,9 +165,10 @@
     <None Include="ExrinTemplate.UWP\Assets\StoreLogo.png" />
     <None Include="ExrinTemplate.UWP\Assets\Wide310x150Logo.scale-200.png" />
     <None Include="ExrinTemplate.UWP\ExrinTemplate.UWP.csproj" />
-    <None Include="ExrinTemplate.UWP\MyTemplate.vstemplate">
+    <VSTemplate Include="ExrinTemplate.UWP\ExrinTemplate.UWP.vstemplate">
       <SubType>Designer</SubType>
-    </None>
+      <OutputSubPath>Exrin</OutputSubPath>
+    </VSTemplate>
     <None Include="ExrinTemplate.UWP\Properties\Default.rd.xml" />
     <None Include="ExrinTemplate.UWP\__TemplateIcon.png" />
     <None Include="ExrinTemplate.View\ExrinTemplate.View.csproj" />

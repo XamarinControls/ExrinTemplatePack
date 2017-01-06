@@ -10,28 +10,29 @@ namespace Exrin.VisualStudio.Wizard
         private DTE _dte = null;
         private string _solutionDir = null;
         private string _projectName = null;
+        private string _templateDir = null;
         ProjectSelectionResult _result;
 
         public void BeforeOpeningFile(ProjectItem projectItem) { }
 
         public void ProjectFinishedGenerating(Project project)
         {
-            //if (_result.HasFlag(ProjectSelectionResult.Android))
-            //    CreateProject("Droid");
+            if (_result.HasFlag(ProjectSelectionResult.Android))
+                CreateProject("Droid");
 
-            //if (_result.HasFlag(ProjectSelectionResult.iOS))
-            //    CreateProject("iOS");
+            if (_result.HasFlag(ProjectSelectionResult.iOS))
+                CreateProject("iOS");
 
-            //if (_result.HasFlag(ProjectSelectionResult.UWP))
-            //    CreateProject("UWP");
+            if (_result.HasFlag(ProjectSelectionResult.UWP))
+                CreateProject("UWP");
         }
 
         void CreateProject(string platform)
         {
-            //string name = $"{_projectName}.{platform}";
-            //string projectPath = Path.Combine(_solutionDir, Path.Combine(_projectName, name));
-            //string templatePath = $"{name}.zip\\MyTemplate.vstemplate";
-            //_dte.Solution.AddFromTemplate(templatePath, projectPath, name);
+            string name = $"{_projectName}.{platform}";
+            string projectPath = Path.Combine(_solutionDir, Path.Combine(_projectName, name));
+            string templatePath = Path.Combine(Path.GetDirectoryName(_templateDir), $"ExrinTemplate.{platform}.zip\\ExrinTemplate.{platform}.vstemplate");
+            _dte.Solution.AddFromTemplate(templatePath, projectPath, name);
         }
 
         public void ProjectItemFinishedGenerating(ProjectItem projectItem) { }
@@ -43,19 +44,17 @@ namespace Exrin.VisualStudio.Wizard
             try
             {
                 _dte = automationObject as DTE;
-               
                 _projectName = replacementsDictionary["$safeprojectname$"];
                 _solutionDir = Path.GetDirectoryName(replacementsDictionary["$destinationdirectory$"]);
+                _templateDir = Path.GetDirectoryName(customParams[0] as string);
 
-              
-
-                //replacementsDictionary["$safeprojectname$"] = replacementsDictionary["$specifiedsolutionname$"];
                 ProjectSelectionDialog dialog = new ProjectSelectionDialog();
                 dialog.ShowDialog();
-                //_result = dialog.Result;
 
-                //if (_result == ProjectSelectionResult.None)
-                //    throw new WizardBackoutException();
+                _result = dialog.Result;
+
+                if (_result == ProjectSelectionResult.None)
+                    throw new WizardBackoutException();
             }
             catch
             {

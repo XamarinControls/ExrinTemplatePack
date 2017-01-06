@@ -5,6 +5,7 @@
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
+    <TemplateID>e9f32fe5-24c3-4ba9-a7c0-a9ab5ba5ba89</TemplateID>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>ExrinTemplate.iOS</DefaultName>
@@ -12,6 +13,7 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.png</Icon>
+    <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.iOS.csproj" File="ExrinTemplate.iOS.csproj" ReplaceParameters="true">

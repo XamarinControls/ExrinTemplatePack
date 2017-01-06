@@ -5,6 +5,7 @@
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
+    <TemplateID>f3db9d76-e4a9-4ca3-8c47-3f9c498e2f92</TemplateID>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>ExrinTemplate.Droid</DefaultName>
@@ -12,6 +13,7 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.png</Icon>
+    <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.Droid.csproj" File="ExrinTemplate.Droid.csproj" ReplaceParameters="true">

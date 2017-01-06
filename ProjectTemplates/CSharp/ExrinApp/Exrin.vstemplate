@@ -1,10 +1,12 @@
 ﻿<VSTemplate Version="2.0.0" Type="ProjectGroup"
     xmlns="http://schemas.microsoft.com/developer/vstemplate/2005">
   <TemplateData>
-    <Name>Exrin</Name>
+    <Name>Exrin Mobile App</Name>
     <Description>Xamarin Forms mobile solution using Exrin</Description>
     <Icon>Icon.ico</Icon>
     <ProjectType>CSharp</ProjectType>
+    <TemplateID>EF7C42D7-2BBF-4657-956D-4E659D6586AC</TemplateID>
+    <NumberOfParentCategoriesToRollUp>1</NumberOfParentCategoriesToRollUp>
     <DefaultName>ExrinMobileApp</DefaultName>
   </TemplateData>
   <TemplateContent>
@@ -23,7 +25,7 @@
           ExrinTemplate.View\MyTemplate.vstemplate
         </ProjectTemplateLink>
       </SolutionFolder>
-      <SolutionFolder Name="Platform">
+     <!-- <SolutionFolder Name="Platform">
         <ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
           ExrinTemplate.Droid\MyTemplate.vstemplate
         </ProjectTemplateLink>
@@ -33,13 +35,9 @@
         <ProjectTemplateLink ProjectName="$safeprojectname$.UWP">
           ExrinTemplate.UWP\MyTemplate.vstemplate
         </ProjectTemplateLink>
-      </SolutionFolder>
+      </SolutionFolder>-->
     </ProjectCollection>
   </TemplateContent>
-  <WizardExtension>
-    <Assembly>Xamarin.Forms.Templates.VisualStudio</Assembly>
-    <FullClassName>Xamarin.Forms.Templates.Wizards.SolutionGuids</FullClassName>
-  </WizardExtension>
   <WizardExtension>
     <Assembly>Exrin.VisualStudio.Wizard, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c386332babdcac90</Assembly>
     <FullClassName>Exrin.VisualStudio.Wizard.ExrinProjectWizard</FullClassName>

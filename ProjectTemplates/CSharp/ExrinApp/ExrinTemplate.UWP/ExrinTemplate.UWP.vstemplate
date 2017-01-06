@@ -5,6 +5,7 @@
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
+    <TemplateID>480c54e5-f407-4e05-8dbb-f29d87a9d8d9</TemplateID>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>ExrinTemplate.UWP</DefaultName>
@@ -12,6 +13,7 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <Icon>__TemplateIcon.png</Icon>
+    <Hidden>true</Hidden>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.UWP.csproj" File="ExrinTemplate.UWP.csproj" ReplaceParameters="true">
