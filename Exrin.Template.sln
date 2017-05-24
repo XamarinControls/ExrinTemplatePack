@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.9
+VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectTemplates", "ProjectTemplates", "{8D5FFD4D-3577-4E20-B2D8-ADFAA0568015}"
 EndProject
@@ -20,6 +20,11 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exrin.VisualStudio.Wizard", "Wizards\Exrin.VisualStudio.Wizard\Exrin.VisualStudio.Wizard.csproj", "{4502F3E5-1CC4-4E2B-84E2-6B9B648D03FB}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExrinOperation", "ItemTemplates\CSharp\ExrinOperation\ExrinOperation.csproj", "{4D2FD997-5F06-48ED-899E-4EBDF2A752DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2F963336-6835-4C5B-A19A-DAE38661EA74}"
+	ProjectSection(SolutionItems) = preProject
+		0.3.2 Backup\0.3.2_Backup.zip = 0.3.2 Backup\0.3.2_Backup.zip
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
