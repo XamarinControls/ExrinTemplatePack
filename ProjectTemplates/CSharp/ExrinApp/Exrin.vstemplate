@@ -10,32 +10,21 @@
     <DefaultName>ExrinMobileApp</DefaultName>
   </TemplateData>
   <TemplateContent>
-    <ProjectCollection>
+   <ProjectCollection>
       <SolutionFolder Name="App">
         <ProjectTemplateLink ProjectName="$safeprojectname$">
-          ExrinTemplate\MyTemplate.vstemplate
+          ExrinTemplate\ExrinTemplate.vstemplate
         </ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Framework">
-          ExrinTemplate.Framework\MyTemplate.vstemplate
-        </ProjectTemplateLink>
+					ExrinTemplate.Framework\ExrinTemplate.Framework.vstemplate
+				</ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.Logic">
-          ExrinTemplate.Logic\MyTemplate.vstemplate
-        </ProjectTemplateLink>
+					ExrinTemplate.Logic\ExrinTemplate.Logic.vstemplate
+				</ProjectTemplateLink>
         <ProjectTemplateLink ProjectName="$safeprojectname$.View">
-          ExrinTemplate.View\MyTemplate.vstemplate
+          ExrinTemplate.View\ExrinTemplate.View.vstemplate
         </ProjectTemplateLink>
       </SolutionFolder>
-     <!-- <SolutionFolder Name="Platform">
-        <ProjectTemplateLink ProjectName="$safeprojectname$.Droid">
-          ExrinTemplate.Droid\MyTemplate.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.iOS">
-          ExrinTemplate.iOS\MyTemplate.vstemplate
-        </ProjectTemplateLink>
-        <ProjectTemplateLink ProjectName="$safeprojectname$.UWP">
-          ExrinTemplate.UWP\MyTemplate.vstemplate
-        </ProjectTemplateLink>
-      </SolutionFolder>-->
     </ProjectCollection>
   </TemplateContent>
   <WizardExtension>

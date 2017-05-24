@@ -90,6 +90,6 @@ namespace $safeprojectname$.Proxy
         {
             return _registered.Contains(typeof(T));
         }
-        
+
     }
 }

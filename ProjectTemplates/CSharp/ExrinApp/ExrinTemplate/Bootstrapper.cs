@@ -21,7 +21,7 @@ namespace $safeprojectname$
                                             {
                                                 Application.Current.MainPage = view as Page;
                                             });
-                        
+
             _instance.RegisterAssembly(AssemblyAction.Bootstrapper, new Framework.AssemblyRegister().GetType().GetTypeInfo().Assembly.GetName());
             _instance.RegisterAssembly(AssemblyAction.Bootstrapper, new Logic.AssemblyRegister().GetType().GetTypeInfo().Assembly.GetName());
             _instance.RegisterAssembly(AssemblyAction.Bootstrapper, new View.AssemblyRegister().GetType().GetTypeInfo().Assembly.GetName());

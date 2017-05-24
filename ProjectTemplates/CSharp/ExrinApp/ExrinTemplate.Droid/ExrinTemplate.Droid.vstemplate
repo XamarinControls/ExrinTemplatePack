@@ -8,7 +8,7 @@
     <TemplateID>f3db9d76-e4a9-4ca3-8c47-3f9c498e2f92</TemplateID>
     <SortOrder>1000</SortOrder>
     <CreateNewFolder>true</CreateNewFolder>
-    <DefaultName>ExrinTemplate.Droid</DefaultName>
+    <DefaultName>$safeprojectname$.Droid</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
@@ -19,7 +19,7 @@
     <Project TargetFileName="$safeprojectname$.Droid.csproj" File="ExrinTemplate.Droid.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="Bootstrapper.cs">Bootstrapper.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MainActivity.cs">MainActivity.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AndroidManifest.xml">AndroidManifest.xml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>

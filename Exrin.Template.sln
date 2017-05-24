@@ -1,19 +1,25 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ProjectTemplates", "ProjectTemplates", "{8D5FFD4D-3577-4E20-B2D8-ADFAA0568015}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exrin.Template", "Exrin.Template.csproj", "{A0E764A5-F4E0-448B-96D8-703B9FF89B08}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{EE4DAE9B-00FA-4997-8A22-7EE73926F5CE}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExrinApp", "ProjectTemplates\CSharp\ExrinApp\ExrinApp.csproj", "{E598E2CD-3BB0-490E-81D4-2A5CD78994F8}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Wizards", "Wizards", "{39B18B1C-2BAD-445B-BC3A-95706FB20643}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ItemTemplates", "ItemTemplates", "{0627FEAC-CF90-4636-94D7-8D3F5E224C26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSharp", "CSharp", "{DAA36FE5-4A52-4E3C-93E7-C47A21F6D605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exrin.Template", "Exrin.Template.csproj", "{A0E764A5-F4E0-448B-96D8-703B9FF89B08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExrinApp", "ProjectTemplates\CSharp\ExrinApp\ExrinApp.csproj", "{E598E2CD-3BB0-490E-81D4-2A5CD78994F8}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exrin.VisualStudio.Wizard", "Wizards\Exrin.VisualStudio.Wizard\Exrin.VisualStudio.Wizard.csproj", "{4502F3E5-1CC4-4E2B-84E2-6B9B648D03FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExrinOperation", "ItemTemplates\CSharp\ExrinOperation\ExrinOperation.csproj", "{4D2FD997-5F06-48ED-899E-4EBDF2A752DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,13 +39,19 @@ Global
 		{4502F3E5-1CC4-4E2B-84E2-6B9B648D03FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4502F3E5-1CC4-4E2B-84E2-6B9B648D03FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4502F3E5-1CC4-4E2B-84E2-6B9B648D03FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D2FD997-5F06-48ED-899E-4EBDF2A752DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D2FD997-5F06-48ED-899E-4EBDF2A752DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D2FD997-5F06-48ED-899E-4EBDF2A752DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D2FD997-5F06-48ED-899E-4EBDF2A752DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{EE4DAE9B-00FA-4997-8A22-7EE73926F5CE} = {8D5FFD4D-3577-4E20-B2D8-ADFAA0568015}
+		{DAA36FE5-4A52-4E3C-93E7-C47A21F6D605} = {0627FEAC-CF90-4636-94D7-8D3F5E224C26}
 		{E598E2CD-3BB0-490E-81D4-2A5CD78994F8} = {EE4DAE9B-00FA-4997-8A22-7EE73926F5CE}
 		{4502F3E5-1CC4-4E2B-84E2-6B9B648D03FB} = {39B18B1C-2BAD-445B-BC3A-95706FB20643}
+		{4D2FD997-5F06-48ED-899E-4EBDF2A752DA} = {DAA36FE5-4A52-4E3C-93E7-C47A21F6D605}
 	EndGlobalSection
 EndGlobal

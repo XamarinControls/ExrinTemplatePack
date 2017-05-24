@@ -1,6 +1,6 @@
 ﻿using Exrin.Abstraction;
 using Exrin.Framework;
-using $saferootprojectname$.Framework.Abstraction.Model;
+using ExrinMobileApp.Framework.Abstraction.Model;
 using $safeprojectname$.Base;
 using $safeprojectname$.VisualState;
 

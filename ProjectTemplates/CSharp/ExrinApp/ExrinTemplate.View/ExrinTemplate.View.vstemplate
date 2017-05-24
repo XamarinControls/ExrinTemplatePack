@@ -1,7 +1,8 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>ExrinTemplate.View</Name>
-    <Description>Exrin View Mobile Project</Description>
+    <Description>
+    </Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -11,27 +12,20 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>__TemplateIcon.png</Icon>
+    <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.View.csproj" File="ExrinTemplate.View.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyRegister.cs">AssemblyRegister.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties" />
       <Folder Name="Base" TargetFolderName="Base">
         <ProjectItem ReplaceParameters="true" TargetFileName="BaseView.xaml">BaseView.xaml</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="BaseView.xaml.cs">BaseView.xaml.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyRegister.cs">AssemblyRegister.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="LoginView.xaml">LoginView.xaml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="LoginView.xaml.cs">LoginView.xaml.cs</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml">MainView.xaml</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="MainView.xaml.cs">MainView.xaml.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
-      <Folder Name="Properties" TargetFolderName="Properties">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      </Folder>
     </Project>
   </TemplateContent>
-  <WizardExtension>
-    <Assembly>Xamarin.VisualStudio.TemplateWizards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756</Assembly>
-    <FullClassName>Xamarin.VisualStudio.TemplateWizards.ExtractRootProjectNameWizard</FullClassName>
-  </WizardExtension>
 </VSTemplate>

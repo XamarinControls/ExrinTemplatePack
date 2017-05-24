@@ -1,5 +1,5 @@
 ﻿using Exrin.Abstraction;
-using $saferootprojectname$.Framework.Abstraction.Model;
+using ExrinMobileApp.Framework.Abstraction.Model;
 using $safeprojectname$.Base;
 using $safeprojectname$.ModelState;
 using System.Threading.Tasks;

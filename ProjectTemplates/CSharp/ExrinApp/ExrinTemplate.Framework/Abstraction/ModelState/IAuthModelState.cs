@@ -2,7 +2,7 @@
 
 namespace $safeprojectname$.Abstraction.ModelState
 {
-    public interface IAuthModelState: IModelState
+    public interface IAuthModelState : IModelState
     {
     }
 }

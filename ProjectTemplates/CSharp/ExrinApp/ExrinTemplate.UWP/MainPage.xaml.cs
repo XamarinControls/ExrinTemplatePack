@@ -6,7 +6,7 @@
         {
             this.InitializeComponent();
 
-            LoadApplication(new $saferootprojectname$.App(new Bootstrapper()));
+            LoadApplication(new ExrinMobileApp.App(new Bootstrapper()));
         }
     }
 }

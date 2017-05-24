@@ -2,7 +2,7 @@
 
 namespace $safeprojectname$.Abstraction.Model
 {
-    public interface IMainModel: IBaseModel
+    public interface IMainModel : IBaseModel
     {
     }
 }

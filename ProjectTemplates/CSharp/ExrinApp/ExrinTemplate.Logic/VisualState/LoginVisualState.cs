@@ -7,5 +7,19 @@ namespace $safeprojectname$.VisualState
         public LoginVisualState(IBaseModel model) : base(model)
         {
         }
+
+        public string Username
+        {
+            get
+            {
+                return Get<string>();
+            }
+            set
+            {
+                Set(value);
+            }
+        }
+
     }
 }
+

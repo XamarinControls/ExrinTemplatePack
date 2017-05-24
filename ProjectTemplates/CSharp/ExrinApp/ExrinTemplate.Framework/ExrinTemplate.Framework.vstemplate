@@ -1,7 +1,8 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>ExrinTemplate.Framework</Name>
-    <Description>Exrin Framework Mobile Project</Description>
+    <Description>
+    </Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -11,10 +12,11 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>__TemplateIcon.png</Icon>
+    <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.Framework.csproj" File="ExrinTemplate.Framework.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties" />
       <Folder Name="Abstraction" TargetFolderName="Abstraction">
         <Folder Name="Model" TargetFolderName="Model">
           <ProjectItem ReplaceParameters="true" TargetFileName="IAuthModel.cs">IAuthModel.cs</ProjectItem>
@@ -25,20 +27,12 @@
           <ProjectItem ReplaceParameters="true" TargetFileName="IMainModelState.cs">IMainModelState.cs</ProjectItem>
         </Folder>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyRegister.cs">AssemblyRegister.cs</ProjectItem>
       <Folder Name="Locator" TargetFolderName="Locator">
         <ProjectItem ReplaceParameters="true" TargetFileName="Containers.cs">Containers.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Stacks.cs">Stacks.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="Views.cs">Views.cs</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
-      <Folder Name="Properties" TargetFolderName="Properties">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyRegister.cs">AssemblyRegister.cs</ProjectItem>
     </Project>
   </TemplateContent>
-  <WizardExtension>
-    <Assembly>Xamarin.VisualStudio.TemplateWizards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756</Assembly>
-    <FullClassName>Xamarin.VisualStudio.TemplateWizards.ExtractRootProjectNameWizard</FullClassName>
-  </WizardExtension>
 </VSTemplate>

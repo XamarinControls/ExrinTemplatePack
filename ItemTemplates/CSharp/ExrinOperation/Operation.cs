@@ -1,22 +1,18 @@
 ﻿using Exrin.Abstraction;
 using Exrin.Framework;
-using ExrinMobileApp.Framework.Abstraction.Model;
-using ExrinMobileApp.Framework.Locator;
-using ExrinMobileApp.Framework.Locator.Views;
 using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace $safeprojectname$.ViewModel
+namespace $rootnamespace$
 {
-    public class LoginOperation : ISingleOperation
+	public class $safeitemrootname$ : ISingleOperation
     {
-        private readonly IAuthModel _authModel;
 
-        public LoginOperation(IAuthModel authModel)
+        public $safeitemrootname$() // Insert parameters, such as a Model reference
         {
-            _authModel = authModel;
+        
         }
 
         public Func<object, CancellationToken, Task<IList<IResult>>> Function
@@ -27,11 +23,8 @@ namespace $safeprojectname$.ViewModel
                 {
                     Result result = null;
 
-					if (await _authModel.Login())
-						result = new NavigationResult(Stacks.Main, Main.Main);
-					else
-						result = new Result() { ResultAction = ResultType.Display, Arguments = new DisplayArgs() { Message = "Login was unsuccessful" } };
-
+                    // Insert Logic Here
+                
                     return new List<IResult>() { result };
                 };
             }

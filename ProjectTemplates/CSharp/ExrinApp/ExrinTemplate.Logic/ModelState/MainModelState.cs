@@ -1,4 +1,4 @@
-﻿using $saferootprojectname$.Framework.Abstraction.ModelState;
+﻿using ExrinMobileApp.Framework.Abstraction.ModelState;
 
 namespace $safeprojectname$.ModelState
 {

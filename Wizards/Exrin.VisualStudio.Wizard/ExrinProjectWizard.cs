@@ -25,13 +25,33 @@ namespace Exrin.VisualStudio.Wizard
 
             if (_result.HasFlag(ProjectSelectionResult.UWP))
                 CreateProject("UWP");
-        }
 
-        void CreateProject(string platform)
+			//CreateBaseProject("Framework");
+			//CreateBaseProject("View");
+			//CreateBaseProject("Logic");
+			//CreateBaseProject("");
+		}
+
+		void CreateBaseProject(string platform)
+		{
+			var extension = string.Empty;
+
+			if (!string.IsNullOrEmpty(platform))
+				extension = "." + platform;
+			else
+				extension = platform;
+
+			string name = $"{_projectName}{extension}";
+			string projectPath = Path.Combine(_solutionDir, Path.Combine(_projectName, name));
+			string templatePath = Path.Combine(Path.GetDirectoryName(_templateDir), $"..\\..\\1033\\ExrinTemplate{extension}\\ExrinTemplate{extension}.vstemplate");
+			_dte.Solution.AddFromTemplate(templatePath, projectPath, name);
+		}
+
+		void CreateProject(string platform)
         {
             string name = $"{_projectName}.{platform}";
             string projectPath = Path.Combine(_solutionDir, Path.Combine(_projectName, name));
-            string templatePath = Path.Combine(Path.GetDirectoryName(_templateDir), $"ExrinTemplate.{platform}.zip\\ExrinTemplate.{platform}.vstemplate");
+            string templatePath = Path.Combine(Path.GetDirectoryName(_templateDir), $"..\\..\\1033\\ExrinTemplate.{platform}\\ExrinTemplate.{platform}.vstemplate");
             _dte.Solution.AddFromTemplate(templatePath, projectPath, name);
         }
 

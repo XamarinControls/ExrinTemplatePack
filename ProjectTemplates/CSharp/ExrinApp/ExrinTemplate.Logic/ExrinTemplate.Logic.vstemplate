@@ -1,7 +1,8 @@
-<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+<VSTemplate Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>ExrinTemplate.Logic</Name>
-    <Description>Exrin Logic Mobile Project</Description>
+    <Description>
+    </Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType>
     </ProjectSubType>
@@ -11,11 +12,11 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
-    <Icon>__TemplateIcon.png</Icon>
+    <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="$safeprojectname$.Logic.csproj" File="ExrinTemplate.Logic.csproj" ReplaceParameters="true">
-      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyRegister.cs">AssemblyRegister.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties" />
       <Folder Name="Base" TargetFolderName="Base">
         <ProjectItem ReplaceParameters="true" TargetFileName="BaseModel.cs">BaseModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="BaseViewModel.cs">BaseViewModel.cs</ProjectItem>
@@ -28,23 +29,16 @@
         <ProjectItem ReplaceParameters="true" TargetFileName="AuthModelState.cs">AuthModelState.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="MainModelState.cs">MainModelState.cs</ProjectItem>
       </Folder>
-      <ProjectItem ReplaceParameters="true" TargetFileName="project.json">project.json</ProjectItem>
-      <Folder Name="Properties" TargetFolderName="Properties">
-        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
-      </Folder>
       <Folder Name="ViewModel" TargetFolderName="ViewModel">
-        <ProjectItem ReplaceParameters="true" TargetFileName="LoginViewModel.cs">LoginViewModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="LoginOperation.cs">LoginOperation.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginViewModel.cs">LoginViewModel.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModel.cs">MainViewModel.cs</ProjectItem>
       </Folder>
       <Folder Name="VisualState" TargetFolderName="VisualState">
         <ProjectItem ReplaceParameters="true" TargetFileName="LoginVisualState.cs">LoginVisualState.cs</ProjectItem>
         <ProjectItem ReplaceParameters="true" TargetFileName="MainVisualState.cs">MainVisualState.cs</ProjectItem>
       </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyRegister.cs">AssemblyRegister.cs</ProjectItem>
     </Project>
   </TemplateContent>
-  <WizardExtension>
-    <Assembly>Xamarin.VisualStudio.TemplateWizards, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756</Assembly>
-    <FullClassName>Xamarin.VisualStudio.TemplateWizards.ExtractRootProjectNameWizard</FullClassName>
-  </WizardExtension>
 </VSTemplate>

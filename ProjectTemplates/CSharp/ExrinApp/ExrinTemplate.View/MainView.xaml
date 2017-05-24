@@ -4,6 +4,6 @@
                 xmlns:local="clr-namespace:$safeprojectname$.Base"
                 x:Class="$safeprojectname$.MainView">
   <Grid Padding="20">
-    <Label Text="Hello, this the main page" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
+    <Label Text="Hello, this the main page." HorizontalTextAlignment="Center" VerticalTextAlignment="Center" />
   </Grid>
 </local:BaseView>

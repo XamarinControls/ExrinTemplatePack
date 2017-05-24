@@ -24,9 +24,9 @@ namespace $safeprojectname$
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
-            Exrin.Framework.App.Init(new PlatformOptions() { Platform = Device.OS.ToString() });
             Forms.Init();
-            LoadApplication(new App(new Bootstrapper()));
+			Exrin.Framework.App.Init(new PlatformOptions() { Platform = Xamarin.Forms.Device.RuntimePlatform });
+			LoadApplication(new App(new Bootstrapper()));
 
             return base.FinishedLaunching(app, options);
         }
